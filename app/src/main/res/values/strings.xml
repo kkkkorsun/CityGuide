@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">City Guide</string>
+    <strring name="logo_name"> Tashkent Guide </strring>
+    <strring name="slogan_name"> We will help you find your way! </strring>
+</resources>
