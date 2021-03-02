@@ -51,6 +51,7 @@ public class OnBoarding extends AppCompatActivity {
 
     public void skip(View view){
         startActivity(new Intent(getApplicationContext(), UserDashboard.class));
+        finish();
 
     }
 
