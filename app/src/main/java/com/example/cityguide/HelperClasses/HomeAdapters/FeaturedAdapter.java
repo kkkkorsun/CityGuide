@@ -1,6 +1,5 @@
-package com.example.cityguide.HelperClasses.HomeAdapter;
+package com.example.cityguide.HelperClasses.HomeAdapters;
 
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,9 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses.FeaturedHelperClass;
 import com.example.cityguide.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class FeaturedAdapter extends RecyclerView.Adapter <FeaturedAdapter.FeaturedViewerHolder> {

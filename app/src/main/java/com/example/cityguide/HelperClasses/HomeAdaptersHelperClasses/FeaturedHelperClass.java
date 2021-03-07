@@ -1,4 +1,4 @@
-package com.example.cityguide.HelperClasses.HomeAdapter;
+package com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses;
 
 public class FeaturedHelperClass {
 
