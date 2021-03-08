@@ -36,7 +36,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/menu_icon" />
+                android:src="@drawable/add_menu_icon" />
 
             <ImageView
                 android:layout_width="40dp"
@@ -153,7 +153,7 @@
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_centerInParent="true"
-                                android:src="@drawable/bank_icon" />
+                                android:src="@drawable/hotel_icon" />
 
 
                         </RelativeLayout>
