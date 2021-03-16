@@ -32,12 +32,10 @@
         android:layout_above="@id/app_name"/>
 
     <ImageView
-        android:layout_width="190dp"
-        android:layout_height="175dp"
+        android:layout_width="175dp"
+        android:layout_height="160dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/menu_img" />
-
-
 
 </RelativeLayout>
