@@ -234,7 +234,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:background="@color/banner_background_lighr">
+                    android:background="@color/banner_background_light">
 
                     <LinearLayout
                         android:id="@+id/featured_background"
