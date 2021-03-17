@@ -23,7 +23,6 @@
 
 
     //Категории
-
     <string name="hotels"> Hotels </string>
     <string name="restaurants"> Restaurants </string>
     <string name="shops"> Shops </string>
@@ -31,10 +30,25 @@
     <string name="club"> Night Clubs </string>
     <string name="hospital"> Hospital </string>
     <string name="pharmacy"> Pharmacy </string>
-    <string name="rent_car"> Rent Car </string>
+    <string name="rent_car"> Car Rent </string>
     <string name="education"> Education </string>
     <string name="attraction"> Attraction </string>
     <string name="expand_all">Expand All</string>
+
+
+    //Для бизнеса
+    <string name="retailer_heading">Grow\nYour Business</string>
+    <string name="retailer_tag_line">We will help you to grow your business using online services!</string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="how_we_work">How we work?</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget Password</string>
+
+
+    //Основные
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+
 
 
     <string name="featured_locations">All Featured Locations</string>
@@ -54,8 +68,6 @@
     <string name="nav_logout">Logout</string>
     <string name="nav_share">Share</string>
     <string name="nav_rate_us">Rate us</string>
-
-
 
 
 </resources>

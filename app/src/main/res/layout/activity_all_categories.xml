@@ -41,6 +41,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/brandon_grotesque_black"
             android:padding="10dp"
+            android:textAllCaps="true"
             android:text="Categories"
             android:textSize="30sp" />
 

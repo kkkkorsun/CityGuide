@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.cityguide.Common.LoginSingup.RetailerStartUpScreen;
 import com.example.cityguide.HelperClasses.HomeAdapters.CategoriesAdapter;
 import com.example.cityguide.HelperClasses.HomeAdapters.FeaturedAdapter;
 import com.example.cityguide.HelperClasses.HomeAdapters.MostViewedAdapter;
@@ -109,6 +110,11 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
             }
         });
+    }
+
+
+    public void callRetailerScreen(View view){
+        startActivity(new Intent(getApplicationContext(), RetailerStartUpScreen.class));
     }
 
     @Override
