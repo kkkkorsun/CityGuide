@@ -147,11 +147,11 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         gradient4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffb8d7f5, 0xffb8d7f5});
 
         ArrayList<CategoriesHelperClass> categoriesHelperClasses = new ArrayList<>();
-        categoriesHelperClasses.add(new CategoriesHelperClass(gradient1, R.drawable.kfc, "Education"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(gradient2, R.drawable.kfc, "HOSPITAL"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(gradient3, R.drawable.kfc, "Restaurant"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(gradient4, R.drawable.kfc, "Shopping"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(gradient1, R.drawable.kfc, "Transport"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(gradient1, R.drawable.categories_education_icon, "Education"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(gradient2, R.drawable.categories_hospital_icon, "HOSPITAL"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(gradient3, R.drawable.categories_restaurant_icon, "Restaurant"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(gradient4, R.drawable.categories_shop_icon, "Shopping"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(gradient1, R.drawable.categories_rent_car_icon, "Rent Car"));
 
         categoriesRecycler.setHasFixedSize(true);
         adapter = new CategoriesAdapter(categoriesHelperClasses);
@@ -167,10 +167,10 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
 
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "Это просто текст бла бла бла"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "Это просто текст бла бла бла"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "Это просто текст бла бла бла"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "Это просто текст бла бла бла"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KFC"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KCF"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KFC"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KFC"));
 
         adapter = new MostViewedAdapter(mostViewedLocations);
         mostViewedRecycler.setAdapter(adapter);

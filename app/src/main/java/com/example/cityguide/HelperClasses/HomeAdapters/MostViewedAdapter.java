@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses.MostViewedHelperClass;
 import com.example.cityguide.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MostViewedAdapter extends RecyclerView.Adapter <MostViewedAdapter.MostViewedViewHolder> {
