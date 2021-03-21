@@ -51,8 +51,11 @@
     <string name="Share">Share</string>
     <string name="rate_us">Rate US</string>
     <string name="sign_up">Sign Up</string>
-    <string name="enter_username">Enter Username</string>
+    <string name="enter_username">Username</string>
     <string name="enter_password">Enter Password</string>
+    <string name="enter_full_name">Full name</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_phone_number">Phone Number</string>
 
 
     <string name="featured_locations">All Featured Locations</string>
