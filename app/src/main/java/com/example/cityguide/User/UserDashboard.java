@@ -2,6 +2,7 @@ package com.example.cityguide.User;
 
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -142,6 +143,14 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
                     startActivity(Intent.createChooser(i, "Share With"));
                 } catch (Exception e){
                     Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
+                }
+            case R.id.nav_rate_us:
+                Uri uri = Uri.parse("https://github.com/kkkkorsun");
+                Intent i =  new Intent(Intent.ACTION_VIEW, uri);
+                try {
+                    startActivity(i);
+                } catch (Exception e) {
+                    Toast.makeText(this,"Unable to open\n"+e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
         }
 
