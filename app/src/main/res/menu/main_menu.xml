@@ -76,7 +76,7 @@
             <group android:checkableBehavior="none">
 
                 <item
-                    android:id="@+id/nav_share"
+                    android:id="@+id/share"
                     android:icon="@drawable/share_icon"
                     android:title="@string/nav_share" />
                 <item

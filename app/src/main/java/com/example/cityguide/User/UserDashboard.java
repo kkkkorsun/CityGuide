@@ -1,12 +1,5 @@
 package com.example.cityguide.User;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
@@ -15,6 +8,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cityguide.Common.LoginSingup.RetailerStartUpScreen;
 import com.example.cityguide.HelperClasses.HomeAdapters.CategoriesAdapter;
@@ -38,7 +39,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     private GradientDrawable gradient1, gradient2, gradient3, gradient4;
     ImageView menuIcon;
 
-
     //Drawer menu
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -56,7 +56,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         categoriesRecycler = findViewById(R.id.categories_recycler);
         menuIcon = findViewById(R.id.menu_icon);
         contentView = findViewById(R.id.content);
-
 
         //Menu
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -113,7 +112,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     }
 
 
-    public void callRetailerScreen(View view){
+    public void callRetailerScreen(View view) {
         startActivity(new Intent(getApplicationContext(), RetailerStartUpScreen.class));
     }
 
@@ -126,6 +125,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             super.onBackPressed();
     }
 
+    //Логика бокового меню
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -133,6 +133,16 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             case R.id.nav_all_categories:
                 startActivity(new Intent(getApplicationContext(), AllCategories.class));
                 break;
+            case R.id.share:
+                try {
+                    Intent i = new Intent(Intent.ACTION_SEND);
+                    i.setType("text/plain");
+                    i.putExtra(Intent.EXTRA_SUBJECT, "Hey, I'm using Tashkent City Guide to find interesting places. Join me! Download it here: ");
+                    i.putExtra(Intent.EXTRA_TEXT, "https://github.com/kkkkorsun" );
+                    startActivity(Intent.createChooser(i, "Share With"));
+                } catch (Exception e){
+                    Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
+                }
         }
 
         return true;
