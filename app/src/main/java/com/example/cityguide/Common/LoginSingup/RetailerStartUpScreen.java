@@ -37,4 +37,17 @@ public class RetailerStartUpScreen extends AppCompatActivity {
 
     }
 
+    public void callSingUpScreen(View view) {
+        Intent intent = new Intent(getApplicationContext(), SignUp.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.signup_btn), "transition_singup");
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(RetailerStartUpScreen.this, pairs);
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(intent);
+        }
+
+    }
 }

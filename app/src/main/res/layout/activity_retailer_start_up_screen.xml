@@ -14,6 +14,7 @@
         android:orientation="vertical">
 
         <ImageView
+
             android:layout_width="match_parent"
             android:layout_height="280dp"
             android:src="@drawable/grow_your_business_icon" />
@@ -64,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
+                android:onClick="callSingUpScreen"
                 android:background="@color/colorPrimary"
                 android:text="@string/sign_up"
                 android:textColor="@color/black" />

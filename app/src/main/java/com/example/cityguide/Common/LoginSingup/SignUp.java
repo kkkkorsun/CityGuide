@@ -21,7 +21,7 @@ public class SignUp extends AppCompatActivity {
 
     ImageView backBtn;
     Button next, login;
-    TextView titleText;
+    TextView titleText, slideText;
 
     @Override
 
@@ -34,6 +34,7 @@ public class SignUp extends AppCompatActivity {
         next = findViewById(R.id.signup_next_button);
         login = findViewById(R.id.signup_login_button);
         titleText = findViewById(R.id.signup_title_text);
+        slideText = findViewById(R.id.signup_slide_text);
 
     }
 
@@ -56,5 +57,10 @@ public class SignUp extends AppCompatActivity {
         }
 
 
+    }
+
+    public void callLoginFromSignUp (View view){
+        startActivity(new Intent(getApplicationContext(), Login.class));
+        finish();
     }
 }
