@@ -76,5 +76,11 @@
     <string name="nav_share">Share</string>
     <string name="nav_rate_us">Rate us</string>
 
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Code</string>
+
+
+
 
 </resources>
