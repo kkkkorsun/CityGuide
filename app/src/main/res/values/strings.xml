@@ -84,6 +84,10 @@
     <string name="make_selection">Make selection</string>
     <string name="via_sms">Via sms</string>
     <string name="via_email">Via email</string>
+    <string name="password_updated">Password updated</string>
+    <string name="password_updated_success_message">your password has been updated</string>
+    <string name="new_credentials_detail">Your identify has been verified!\n Set your new password</string>
+    <string name="new_credentials">New credentials</string>
     <string name="make_selection_detail">Select which contact detail should we use to reset your password</string>
 
 
