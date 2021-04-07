@@ -80,7 +80,7 @@
     <string name="otp_verification_text">Verification</string>
     <string name="otp_description_text">Code</string>
 
-
+    <string name="forget_password_detail">Provide your accounts email for which you want\n to reset your password!</string>
 
 
 </resources>
