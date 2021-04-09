@@ -1,6 +1,9 @@
 package com.example.cityguide.Common.LoginSingup;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
@@ -54,10 +57,30 @@ public class SignUp3rdClass extends AppCompatActivity {
         }
         final String _phoneNo = "+" + countryCodePicker.getSelectedCountryCode() + _getUserEnteredPhoneNumber;
 
+        Intent intent = new Intent(getApplicationContext(), VerifyOTP.class);
+
+        //Pass all fields to the next activity
+        intent.putExtra("fullName", _fullName);
+        intent.putExtra("email", _email);
+        intent.putExtra("username", _username);
+        intent.putExtra("password", _password);
+        intent.putExtra("date", _date);
+        intent.putExtra("gender", _gender);
+        intent.putExtra("phoneNo", _phoneNo);
+        intent.putExtra("whatToDO", "createNewUser");
+
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(scrollView, "transition_OTP_screen");
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SignUp3rdClass.this, pairs);
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(intent);
+        }
+        progressbar.setVisibility(View.GONE);
 
 
     }
-
 
     public boolean validatePhoneNumber() {
         String val = phoneNumber.getEditText().getText().toString().trim();

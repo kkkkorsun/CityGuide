@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Common.LoginSingup.ForgetPasswordSuccessMessage"></activity>
+        <activity android:name=".Common.LoginSingup.VerifyOTP"></activity>
+        <activity android:name=".Common.LoginSingup.ForgetPasswordSuccessMessage" />
         <activity android:name=".Common.LoginSingup.SetNewPassword" />
         <activity android:name=".Common.LoginSingup.MakeSelection" />
         <activity android:name=".Common.LoginSingup.ForgetPassword" />
-        <activity android:name=".Common.LoginSingup.VerifyOTP" />
         <activity android:name=".Common.LoginSingup.SignUp3rdClass" />
         <activity android:name=".Common.LoginSingup.SignUp2ndClass" />
         <activity android:name=".Common.LoginSingup.SignUp" />
