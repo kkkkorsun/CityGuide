@@ -52,7 +52,17 @@ public class SignUp extends AppCompatActivity {
             return;
         }
 
+        String _fullName = fullName.getEditText().getText().toString().trim();
+        String _email = email.getEditText().getText().toString().trim();
+        String _username = username.getEditText().getText().toString().trim();
+        String _password = password.getEditText().getText().toString().trim();
+
         Intent intent = new Intent(getApplicationContext(), SignUp2ndClass.class);
+        intent.putExtra("fullName", _fullName);
+        intent.putExtra("email", _email);
+        intent.putExtra("username", _username);
+        intent.putExtra("password", _password);
+
 
         Pair[] pairs = new Pair[5];
 

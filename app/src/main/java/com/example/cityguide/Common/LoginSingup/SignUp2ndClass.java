@@ -47,7 +47,7 @@ public class SignUp2ndClass extends AppCompatActivity {
     public void call3rdSigupScreen(View view) {
 
 
-        if (!validateGender() | !validateAge()){
+        if (!validateGender() | !validateAge()) {
             return;
         }
 
@@ -57,13 +57,23 @@ public class SignUp2ndClass extends AppCompatActivity {
         int day = datePicker.getDayOfMonth();
         int month = datePicker.getMonth();
         int year = datePicker.getYear();
+        String _date = day + "/" + month + "/" + year;
 
-        String _date = day+"/"+month+"/"+year;
 
-
+        String _fullName = getIntent().getStringExtra("fullName");
+        String _email = getIntent().getStringExtra("email");
+        String _username = getIntent().getStringExtra("username");
+        String _password = getIntent().getStringExtra("password");
 
 
         Intent intent = new Intent(getApplicationContext(), SignUp3rdClass.class);
+
+        intent.putExtra("fullName", _fullName);
+        intent.putExtra("email", _email);
+        intent.putExtra("username", _username);
+        intent.putExtra("password", _password);
+        intent.putExtra("date", _date);
+        intent.putExtra("gender", _gender);
 
         Pair[] pairs = new Pair[5];
         pairs[0] = new Pair(backBtn, "transition_back_arrow_btn");
