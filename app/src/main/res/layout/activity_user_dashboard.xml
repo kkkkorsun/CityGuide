@@ -49,6 +49,8 @@
                 android:onClick="callRetailerScreen"
                 android:background="@color/banner_background"
                 android:padding="5dp"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
                 android:src="@drawable/add_missing_place_icon" />
 
         </RelativeLayout>
