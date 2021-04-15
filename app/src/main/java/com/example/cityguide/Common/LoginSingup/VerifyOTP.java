@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,6 +28,7 @@ public class VerifyOTP extends AppCompatActivity {
 
     PinView pinFromUser;
     String codeBySystem;
+    public TextView resend;
 
 
     @Override
@@ -36,11 +38,22 @@ public class VerifyOTP extends AppCompatActivity {
         setContentView(R.layout.activity_verify_o_t_p);
 
         pinFromUser = findViewById(R.id.pin_view);
-        String _phoneNo = getIntent().getStringExtra("phoneNo");
-
+        final String _phoneNo = getIntent().getStringExtra("phoneNo");
 
         sendVerificationCodeToUser(_phoneNo);
+        
+        resend = findViewById(R.id.resend);
+        resend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resend_otp(_phoneNo);
+            }
+        });
 
+    }
+
+    private void resend_otp(String phoneNo) {
+        sendVerificationCodeToUser(phoneNo);
     }
 
 
