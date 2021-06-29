@@ -34,8 +34,9 @@ public class MostViewedAdapter extends RecyclerView.Adapter <MostViewedAdapter.M
     public void onBindViewHolder(@NonNull MostViewedViewHolder holder, int position) {
         MostViewedHelperClass helperClass = mostViewedLocations.get(position);
 
-        holder.imageView.setImageResource(helperClass.getImageView());
-        holder.textView.setText(helperClass.getTextView());
+        holder.image.setImageResource(helperClass.getImage());
+        holder.title.setText(helperClass.getTitle());
+        holder.desc.setText(helperClass.getDescription());
 
     }
 
@@ -46,14 +47,15 @@ public class MostViewedAdapter extends RecyclerView.Adapter <MostViewedAdapter.M
 
     public static class MostViewedViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView imageView;
-        TextView textView;
+        ImageView image;
+        TextView title, desc;
 
         public MostViewedViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            imageView = itemView.findViewById(R.id.mv_image);
-            textView = itemView.findViewById(R.id.mv_title);
+            image = itemView.findViewById(R.id.mv_image);
+            title = itemView.findViewById(R.id.mv_title);
+            desc = itemView.findViewById(R.id.mv_desc);
         }
     }
 

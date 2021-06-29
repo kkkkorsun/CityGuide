@@ -8,16 +8,16 @@
             android:icon="@drawable/menu_dashboard_icon"
             android:title="@string/nav_home" />
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/menu_search_icon"
-            android:title="@string/nav_search" />
+            android:id="@+id/nav_near_me"
+            android:icon="@drawable/missing_place_icon"
+            android:title="@string/nav_location" />
         <item
             android:id="@+id/nav_all_categories"
             android:icon="@drawable/all_categories_icon"
             android:title="@string/nav_all_categories" />
         <item
             android:id="@+id/nav_add_missing_place"
-            android:icon="@drawable/missing_place_icon"
+            android:icon="@drawable/nav_favourite"
             android:title="@string/add_missing_place" />
     </group>
 

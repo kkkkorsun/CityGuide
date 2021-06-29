@@ -186,10 +186,10 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
 
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KFC"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KCF"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KFC"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.kfc, "KFC"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.tashkentcity, "Tashkent City", "Tashkent City International Business Center"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.magiccity, "Magic City", "Asia's Largest All-Season Amusement and Amusement Park Magic City"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.blbar, "Burger and Lounge", "The first and only gastroformat of its kind in Tashkent"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.irishtash, "The Irish Pub & Restaurant", "The Irish Pub is one of the first Irish pubs in Tashkent."));
 
         adapter = new MostViewedAdapter(mostViewedLocations);
         mostViewedRecycler.setAdapter(adapter);
@@ -205,9 +205,9 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
 
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.kfc, "KFC", "Это просто текст бла бла бла"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.kfc, "Bakers", "Это просто текст бла бла бла"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.kfc, "Zara", "Это просто текст бла бла бла"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.mustakillik, "Mustakillik Square", "The central square of the city of Tashkent"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.plovcentre, "Central Asian Plov Centre", "The most delicious plov in Uzbekistan"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.tvtower, "Tashkent TV-Tower", "the tallest building with an open observation deck in Central Asia"));
 
         adapter = new FeaturedAdapter(featuredLocations);
         featuredRecycler.setAdapter(adapter);

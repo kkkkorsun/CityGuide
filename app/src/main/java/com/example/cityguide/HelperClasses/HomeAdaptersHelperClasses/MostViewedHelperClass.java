@@ -2,19 +2,25 @@ package com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses;
 
 public class MostViewedHelperClass {
 
-    int imageView;
-    String textView;
+    int image;
+    String title, description;
 
-    public MostViewedHelperClass(int imageView, String textView) {
-        this.imageView = imageView;
-        this.textView = textView;
+    public MostViewedHelperClass(int image, String title, String description) {
+        this.image = image;
+        this.title = title;
+        this.description = description;
     }
 
-    public int getImageView() {
-        return imageView;
+    public int getImage() {
+        return image;
     }
 
-    public String getTextView() {
-        return textView;
+    public String getTitle() {
+        return title;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
 }

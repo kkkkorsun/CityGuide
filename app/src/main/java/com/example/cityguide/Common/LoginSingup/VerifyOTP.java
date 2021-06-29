@@ -74,10 +74,10 @@ public class VerifyOTP extends AppCompatActivity {
 
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(firebaseAuth)
-                        .setPhoneNumber(phoneNo)       // Phone number to verify
-                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                        .setActivity(this)                 // Activity (for callback binding)
-                        .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
+                        .setPhoneNumber(phoneNo)
+                        .setTimeout(60L, TimeUnit.SECONDS)
+                        .setActivity(this)
+                        .setCallbacks(mCallbacks)
                         .build();
         PhoneAuthProvider.verifyPhoneNumber(options);
 
