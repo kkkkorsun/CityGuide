@@ -134,6 +134,9 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             case R.id.nav_all_categories:
                 startActivity(new Intent(getApplicationContext(), AllCategories.class));
                 break;
+            case R.id.nav_near_me:
+                startActivity(new Intent(getApplicationContext(), NearbyPlaces.class));
+                break;
             case R.id.share:
                 try {
                     Intent i = new Intent(Intent.ACTION_SEND);
