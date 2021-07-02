@@ -18,6 +18,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.cityguide.Common.LoginSingup.Login;
 import com.example.cityguide.Common.LoginSingup.RetailerStartUpScreen;
 import com.example.cityguide.HelperClasses.HomeAdapters.CategoriesAdapter;
 import com.example.cityguide.HelperClasses.HomeAdapters.FeaturedAdapter;
@@ -26,6 +27,7 @@ import com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses.CategoriesH
 import com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses.FeaturedHelperClass;
 import com.example.cityguide.HelperClasses.HomeAdaptersHelperClasses.MostViewedHelperClass;
 import com.example.cityguide.R;
+import com.example.cityguide.categories.RestaurantsDetail;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -131,6 +133,12 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
+            case R.id.nav_login:
+                startActivity(new Intent(getApplicationContext(), Login.class));
+                break;
+            case R.id.nav_restaurants:
+                startActivity(new Intent(getApplicationContext(), RestaurantsDetail.class));
+                break;
             case R.id.nav_all_categories:
                 startActivity(new Intent(getApplicationContext(), AllCategories.class));
                 break;
@@ -150,6 +158,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
                 } catch (Exception e){
                     Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
                 }
+                break;
             case R.id.nav_rate_us:
                 Uri uri = Uri.parse("https://github.com/kkkkorsun");
                 Intent i =  new Intent(Intent.ACTION_VIEW, uri);

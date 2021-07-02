@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.UserProfile"></activity>
+        <activity android:name=".categories.CentralAsianPlov"></activity>
+        <activity android:name=".categories.RestaurantsDetail" />
+        <activity android:name=".User.UserProfile" />
         <activity android:name=".User.NearbyPlaces" />
         <activity android:name=".Common.LoginSingup.VerifyOTP" />
         <activity android:name=".Common.LoginSingup.ForgetPasswordSuccessMessage" />

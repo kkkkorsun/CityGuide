@@ -22,7 +22,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/profile_image" />
+                android:src="@drawable/profile_images" />
 
             <TextView
                 android:id="@+id/full_name"
@@ -34,7 +34,7 @@
                 android:fontFamily="@font/brandon_grotesque_black"
                 android:includeFontPadding="false"
                 android:text="Korsun Pavel"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/user_name"
@@ -46,7 +46,7 @@
                 android:fontFamily="@font/brandon_grotesque_black"
                 android:includeFontPadding="false"
                 android:text="korsun_admin"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
         </RelativeLayout>
 
@@ -80,7 +80,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:fontFamily="@font/brandon_grotesque_light"
+                        android:fontFamily="@font/brandon_grotesque_black"
                         android:includeFontPadding="false"
                         android:text="9"
                         android:textSize="20sp" />
@@ -94,7 +94,7 @@
                         android:fontFamily="@font/brandon_grotesque_light"
                         android:includeFontPadding="false"
                         android:text="Favourite"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
                 </RelativeLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -123,7 +123,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:fontFamily="@font/brandon_grotesque_light"
+                        android:fontFamily="@font/brandon_grotesque_black"
                         android:includeFontPadding="false"
                         android:text="19"
                         android:textSize="20sp" />
@@ -137,7 +137,7 @@
                         android:fontFamily="@font/brandon_grotesque_light"
                         android:includeFontPadding="false"
                         android:text="Bookings"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
                 </RelativeLayout>
 
             </com.google.android.material.card.MaterialCardView>
