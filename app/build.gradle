@@ -52,6 +52,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.7.0'
     implementation 'com.google.firebase:firebase-firestore:22.1.2'
     implementation 'com.karumi:dexter:6.2.2'
+    androidTestImplementation 'androidx.test:rules:1.4.0-rc01'
 
 
 }

@@ -1,8 +1,5 @@
 package com.example.cityguide.Common;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -13,6 +10,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.cityguide.HelperClasses.SliderAdapter;
 import com.example.cityguide.R;
@@ -37,6 +37,13 @@ public class OnBoarding extends AppCompatActivity {
         viewPager = findViewById(R.id.slider);
         dotsLayout = findViewById(R.id.dots);
         letsGetStarted = findViewById(R.id.get_started_btn);
+        letsGetStarted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), UserDashboard.class));
+                finish();
+            }
+        });
 
 
         sliderAdapter = new SliderAdapter(this);
@@ -47,7 +54,6 @@ public class OnBoarding extends AppCompatActivity {
 
 
     }
-
 
     public void skip(View view){
         startActivity(new Intent(getApplicationContext(), UserDashboard.class));

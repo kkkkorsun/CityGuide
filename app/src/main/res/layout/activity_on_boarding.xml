@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Common.OnBoarding"
-    android:padding="20dp">
-
+    android:background="@color/lightWhite"
+    android:padding="20dp"
+    tools:context=".Common.OnBoarding">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/slider"
@@ -15,8 +15,7 @@
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8">
+        app:layout_constraintTop_toTopOf="parent">
 
     </androidx.viewpager.widget.ViewPager>
 
@@ -24,14 +23,14 @@
         android:id="@+id/skip_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/skip_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="skip"
-        android:padding="10dp"
         android:background="#00000000"
         android:drawableEnd="@drawable/skip_icon"
-        android:drawableRight="@drawable/skip_icon" />
+        android:drawableRight="@drawable/skip_icon"
+        android:onClick="skip"
+        android:padding="10dp"
+        android:text="@string/skip_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -41,13 +40,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <Button
             android:id="@+id/get_started_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/let_get_started"
             android:background="@color/colorPrimary"
-            android:visibility="invisible"/>
+            android:text="@string/let_get_started"
+            android:visibility="invisible" />
 
         <LinearLayout
             android:id="@+id/dots"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"/>
+            android:paddingBottom="20dp" />
 
         <Button
             android:id="@+id/next_btn"
@@ -63,16 +63,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:onClick="next"
             android:background="#00000000"
             android:drawableEnd="@drawable/next_btn"
-            android:drawableRight="@drawable/next_btn" />
-
-
-
-
-
+            android:drawableRight="@drawable/next_btn"
+            android:onClick="next"
+            android:paddingBottom="30dp" />
 
 
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

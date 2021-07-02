@@ -1,7 +1,5 @@
 package com.example.cityguide.Common;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -12,12 +10,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.cityguide.R;
 import com.example.cityguide.User.UserDashboard;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static int SPLASH_TIMER = 5000;
+    private static int SPLASH_TIMER = 2000;
 
     ImageView backgroundImage;
     TextView poweredByline;

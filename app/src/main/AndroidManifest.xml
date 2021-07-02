@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cityguide">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.NearbyPlaces"></activity>
+        <activity android:name=".User.UserProfile"></activity>
+        <activity android:name=".User.NearbyPlaces" />
         <activity android:name=".Common.LoginSingup.VerifyOTP" />
         <activity android:name=".Common.LoginSingup.ForgetPasswordSuccessMessage" />
         <activity android:name=".Common.LoginSingup.SetNewPassword" />
@@ -36,7 +37,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -48,7 +48,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDb-9xwoc5EQnhwcGlscwa-Pz0ks2YfMMY" />
-
     </application>
 
 </manifest>
