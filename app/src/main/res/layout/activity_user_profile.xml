@@ -82,7 +82,7 @@
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/brandon_grotesque_black"
                         android:includeFontPadding="false"
-                        android:text="9"
+                        android:text="0"
                         android:textSize="20sp" />
 
                     <TextView
@@ -125,7 +125,7 @@
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/brandon_grotesque_black"
                         android:includeFontPadding="false"
-                        android:text="19"
+                        android:text="0"
                         android:textSize="20sp" />
 
                     <TextView
